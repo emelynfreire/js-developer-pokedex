@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Pokedex Project</title>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -23,9 +23,21 @@
 </head>
 
 <body>
+   
     <section class="content">
-        <h1>Pokedex</h1>
+        <h1>Welcome to</h1> 
+        <a href="index.html"><img src="/assets/imgs/logo.png"></a>
+    <!-- form#form>input#search.search -->
+    
+    <form action="" id="form">
+        <input type="text" id="search" class="search" placeholder="Search here your Pokemon">
+        
+    </form>
 
+    <!-- <div id="poke_container" class="poke_container">
+
+    </div> -->
+        
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
@@ -39,7 +51,9 @@
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/pokemon-modelDetalhe.js"></script>
     <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/poke-apiDetalhe.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 

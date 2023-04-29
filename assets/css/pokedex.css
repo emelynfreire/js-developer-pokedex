@@ -84,6 +84,21 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #a8b720;
+    border-bottom: 1px solid #a8b720;
+
+
+}
+
+.pokemon .img-container img{
+    margin-top: 20px;
+    max-width: 90%;
+    filter: drop-shadow(0 5px 3px black);
+
 }
 
 .pokemon .number {
@@ -125,6 +140,9 @@
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
+    margin-top: 20px;
+    max-width: 90%;
+    filter: drop-shadow(0 5px 3px black);
 }
 
 .pagination {
@@ -145,6 +163,78 @@
     border: none;
     border-radius: 1rem;
 }
+
+
+.type span{
+    color:#a8b720;
+    font-size: 1.2rem;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: 0.3s ease-in;
+    overflow: auto;
+    height: 85%;
+    background-color: #333333;
+    color: #a8b720;
+}
+
+.stats p{
+    justify-content: space-between;
+}
+.pokemon:hover .stats{
+    transform: translateY(0);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+.flex > ul{
+    list-style: none;
+    padding: 0;
+    text-align-last: left;
+
+}
+
+.flex > ul > li::first-letter{
+    text-transform: uppercase;
+}
+
+.search {
+    width: 250px;
+    height: 20px;
+    outline: none;
+    margin: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #a8b720;
+    border-top: 2px solid #a8b720;
+    border-radius: 50px;
+    line-height: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #a8b720;
+    letter-spacing: 2px;
+    font-family: "Caveal",cursivy;
+}
+
+.search::placeholder{
+    text-align: center;
+    color: #a8b720;
+    letter-spacing: 2px;
+    font-family: "Caveal",cursivy;
+}
+
 
 @media screen and (min-width: 380px) {
     .pokemons {

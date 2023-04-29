@@ -4,7 +4,20 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Caveal",cursivy;
+    margin: 0;
+}
+
+a{
+    margin-top: 2rem;
+}
+
+h2{
+    letter-spacing: 3px;
 }
 
 .content {
@@ -12,6 +25,11 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {

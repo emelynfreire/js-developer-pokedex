@@ -33,3 +33,32 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
+
+//remover pokemon
+const removePokemon = () =>{
+    const pokemonEls = document.getElementsByClassName("pokemon");
+    let removePokemons = [];
+
+    for (let i=0;i<pokemonEls.length;i++){
+        const pokemonEl = pokemonELs[i];
+        removablePokemons = [...removePokemons,pokemonEl];
+    }
+
+    removePokemons.forEach((remPoke) => remPoke.remove());
+};
+
+
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const searchItem = search.nodeValue;
+    if(searchItem){
+        getPokemons(searchItem);
+        search.value = "";
+    }else if(searchItem === ""){
+        pokemons = [];
+        removePokemon();
+        fetchPokemons();
+
+    }
+})
